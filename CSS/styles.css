@@ -1,6 +1,22 @@
-h1{
+h1 {
     text-align: center;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 20px;
 }
-body{
-    background-color: lightsalmon;
+
+body {
+    background-color: orange;
+}
+
+.image-container {
+    background-image: url('https://www.pngall.com/wp-content/uploads/1/Bitcoin-PNG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 400px;
+}
+
+.image-container img {
+    width: 100%;
 }
