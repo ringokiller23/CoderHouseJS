@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="/assets/icono.png" type="image/x-icon">
+  <title>Agencia de Viajes</title>
+  <link
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <title>Tu Página de Viajes</title>
+  <link rel="stylesheet" href="/CSS/styleDestinos.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Agencia de Viajes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/userHome.html">PERFIL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacto.html">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout.html">LOGOUT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link" href="/tours/carrito.html">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <div class="package-container">
+    <div class="package">
+      <img src="/Assets/paris.jpg" alt="Francia">
+      <div class="package-content">
+        <h3>Tour Francia 9 días</h3>
+        <h6>Desde 1,499 USD por persona en habitación doble</h6>
+        <button onclick="guardarPaquete(this)" data-flag="francia" data-name="Tour Francia 9 días" data-description="Desde 1,499 USD por persona en habitación doble" data-image="/Assets/paris.jpg">Guardar Paquete</button>
+      </div>
+    </div>
+    <div class="package">
+      <img src="/Assets/roma.jpg" alt="Roma">
+      <div class="package-content">
+        <h3>Tour Roma 8 días</h3>
+        <h6>Desde 1,299 USD por persona en habitación doble</h6>
+        <button onclick="guardarPaquete(this)" data-flag="roma" data-name="Tour Roma 8 días" data-description="Desde 1,299 USD por persona en habitación doble" data-image="/Assets/roma.jpg">Guardar Paquete</button>
+      </div>
+    </div>
+    <div class="package">
+      <img src="/Assets/tokio.jpg" alt="Tokio">
+      <div class="package-content">
+        <h3>Tour Tokio 11 días</h3>
+        <h6>Desde 1,999 USD por persona en habitación doble</h6>
+        <button onclick="guardarPaquete(this)" data-flag="tokio" data-name="Tour Tokio 11 días" data-description="Desde 1,999 USD por persona en habitación doble" data-image="/Assets/tokio.jpg">Guardar Paquete</button>
+      </div>
+    </div>
+    <div class="package">
+      <img src="/Assets/cancun.jpg" alt="Cancun">
+      <div class="package-content">
+        <h3>Tour Cancun 6 días</h3>
+        <h6>Desde 899 USD por persona en habitación doble</h6>
+        <button onclick="guardarPaquete(this)" data-flag="cancun" data-name="Tour Cancun 6 días" data-description="Desde 899 USD por persona en habitación doble" data-image="/Assets/cancun.jpg">Guardar Paquete</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2024 Tu Agencia de Viajes. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="/JS/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  
+</body>
+</html>

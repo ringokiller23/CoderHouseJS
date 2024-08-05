@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/assets/icono.png" type="image/x-icon">
+    <title>Paquete de Viaje</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="/JS/scripts.js" defer></script>
+    <script src="/JS/scriptsUtils.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="plantilla.html">Agencia de Viajes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="destinos-link" href="/destinos.html">DESTINOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" id="carrito-link" href="carrito.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h3 class="text-center" id="packageTitle"></h3>
+        <div class="card" >
+            <img src="" class="card-img-top" style="border-radius: 15px;" alt="">
+            <div class="card-body">
+                <p class="card-text"></p>
+                <form id="tourForm">
+                    <div class="form-group">
+                        <label for="numPersonas">Número de personas</label>
+                        <input type="number" class="form-control" id="numPersonas" name="numPersonas" min="1" value="1" required>
+                    </div>
+                    <h5>Agregar extras</h5>
+                    <h6>Cada servicio extra tiene un costo de 150 USD por persona</h6>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="bebidasIncluidas" name="bebidasIncluidas">
+                                <label class="form-check-label" for="bebidasIncluidas">Plan de alimentos incluidos</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="guiaIncluido" name="guiaIncluido">
+                                <label class="form-check-label" for="guiaIncluido">Servicio de Guía</label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="seguroIncluido" name="seguroIncluido">
+                                <label class="form-check-label" for="seguroIncluido">Seguro de viajero</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="addToCart()">Añadir al carrito</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
+
+
