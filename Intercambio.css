@@ -26,6 +26,17 @@ h1 {
     text-align: center;
 }
 
+.arrow {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.arrow:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
 #header {
     background-color: #f8f9fa;
     padding: 1rem;

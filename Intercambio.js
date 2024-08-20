@@ -8,6 +8,12 @@ if (!sessionToken) {
     window.location.href = 'login.html';
 }
 
+headerarrow.innerHTML = `<span class="arrow" title="Regresar al MarketPlace">&#x2190;</span> Marketplace`;
+
+headerarrow.addEventListener('click', () => {
+    window.location.href = 'index.html';
+});
+
 document.getElementById('logoutBtn').addEventListener('click', function() {
     localStorage.removeItem('email');
     localStorage.removeItem('password');
