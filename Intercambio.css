@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#logoutBtn {
+    margin-left: auto;
+}
+
+.title {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.balance {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.label {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    font-size: 16px;
+}
+
+.usd-value {
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: white;
+}

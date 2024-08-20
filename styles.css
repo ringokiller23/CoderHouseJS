@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+#header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    margin-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+#logoutBtn {
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#logoutBtn:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+.banner {
+    overflow: hidden;
+    background-color: #f8f9fa;
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.banner-content {
+    display: flex;
+    animation: scroll 22s linear infinite;
+    align-items: center;
+}
+
+.crypto-banner-item {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+
+.crypto-banner-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.crypto-grid {
+    margin-top: 20px;
+}
+
+.crypto-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: none;
+}
+
+.crypto-card:hover {
+    transform: scale(1.05);
+}
+
+.crypto-card img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.crypto-btn {
+    margin-bottom: 20px;
+}
+
+.crypto-name {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.crypto-price {
+    color: #28a745;
+    text-align: center;
+}
+
+.crypto-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-buy {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-sell {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}

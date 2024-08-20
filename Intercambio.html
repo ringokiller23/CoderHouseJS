@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercambio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="Intercambio.css">
+    <link rel="icon" type="image/png" href="icon.png">
+</head>
+<body>
+    <div id="header" class="container my-4">
+        <h1>EXCHANGE CRYPTO</h1>
+        <button id="logoutBtn" class="btn btn-outline-danger">Logout</button>
+    </div>
+    
+    <div class="container">
+        <h1 id="crypto-name" class="title"></h1>
+        <p id="crypto-balance" class="balance"></p>
+        <p id="usd-balance" class="balance"></p>
+        <label for="amount" id="amount-label" class="label">Cantidad:</label>
+        <input type="number" id="amount" class="input" min="0" step="0.01">
+        <p id="usd-value" class="usd-value"></p>
+        <button id="action-button" class="btn btn-primary">Aceptar</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Intercambio.js"></script>
+</body>
+</html>
+
